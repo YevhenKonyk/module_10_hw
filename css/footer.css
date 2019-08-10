@@ -4,9 +4,15 @@
 }
 
 .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     
     border-top: 1px solid #e5e5e5;
     padding-top: 10px;
@@ -23,8 +29,12 @@
 }
 
 .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .subscribe-form__email {
@@ -36,6 +46,22 @@
     height: 40px;
 
     padding-left: 12px;
+}
+
+.subscribe-form__email::-webkit-input-placeholder {
+    color: #d9d9d9;
+}
+
+.subscribe-form__email::-moz-placeholder {
+    color: #d9d9d9;
+}
+
+.subscribe-form__email:-ms-input-placeholder {
+    color: #d9d9d9;
+}
+
+.subscribe-form__email::-ms-input-placeholder {
+    color: #d9d9d9;
 }
 
 .subscribe-form__email::placeholder {

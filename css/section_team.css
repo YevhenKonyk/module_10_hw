@@ -16,24 +16,38 @@
 
 .team-list {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .team-list__item {
     /* text-align: center; */
     position: relative;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
     transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .team-list__item:hover {
-    transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
 }
 
 .team-list__item:hover .team-list__img-wrapper {
+    -webkit-transition: -webkit-box-shadow 0.2s linear;
+    transition: -webkit-box-shadow 0.2s linear;
     transition: box-shadow 0.2s linear;
-    box-shadow: 10px 10px rgb(149, 225, 211);
+    transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+    -webkit-box-shadow: 10px 10px rgb(149, 225, 211);
+            box-shadow: 10px 10px rgb(149, 225, 211);
 }
 
 .team-list__item:hover .team-list-img-overlay {
@@ -52,12 +66,19 @@
     
     width: 380px;
     height: 470px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, .9)), to(rgba(252, 227, 138, .9)));
     background-image: linear-gradient(to bottom, rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
 
     /* align icons */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .team-list__img {}
@@ -84,6 +105,8 @@
 /* Share icons */
 .share-icons {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -91,9 +114,17 @@
     width: 52px;
     height: 52px;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     background-color: #fce38a;
 }
