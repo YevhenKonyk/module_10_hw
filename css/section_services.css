@@ -1,0 +1,75 @@
+/* Services section */
+.section-services {
+    padding: 50px 0;
+}
+
+.services-list {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-list__item:nth-child(-n + 3) {
+    margin-bottom: 100px;
+}
+
+.services-list__item {
+    position: relative;
+    width: 380px;
+
+    padding-left: 90px;
+}
+
+.services-list__item_icon::before {
+    position: absolute;
+    top: 0;
+    left: 30px;
+
+    display: block;
+    content: "";
+    width: 32px;
+    height: 32px;
+}
+
+.services-list__item_icon-alarm::before {
+    background-image: url("../img/icons/services/alarm.png");
+}
+
+.services-list__item_icon-line-graph::before {
+    background-image: url("../img/icons/services/line_graph.png");
+}
+
+.services-list__item_icon-computer::before {
+    background-image: url("../img/icons/services/computer_ok.png");
+}
+
+.services-list__item_icon-book::before {
+    background-image: url("../img/icons/services/book_2.png");
+}
+
+.services-list__item_icon-home::before {
+    background-image: url("../img/icons/services/home.png");
+}
+
+.services-list__item_icon-digital::before {
+    background-image: url("../img/icons/services/digital.png");
+}
+
+.services-list__title {
+    font-family: var(--font-MontserratR);
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--font-color-dark-grey);
+
+    margin-bottom: 18px;
+}
+
+.services-list__descr { 
+    font-family: var(--font-RobotoR);
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--font-color-grey);
+}
