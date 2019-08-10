@@ -1,0 +1,38 @@
+/* Common for (all) both sections*/
+.greeting {
+    margin-bottom: 112px;
+}
+
+.greeting__title {
+    font-family: var(--font-KaushanScriptR);
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--font-color-dark-grey);
+    text-align: center;
+
+    margin-bottom: 26px;
+}
+
+.greeting__descr {
+    position: relative;
+    font-family: var(--font-MontserratB);
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--font-color-dark-grey);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.greeting__descr_underline::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 42px;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
