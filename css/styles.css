@@ -1,0 +1,9 @@
+@import './normalize.css';
+@import './fonts.css';
+@import './settings.css';
+@import './variables.css';
+@import './header.css';
+@import './componets/greeting.css';
+@import './section_services.css';
+@import './section_team.css';
+@import './footer.css';
