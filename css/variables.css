@@ -1,0 +1,19 @@
+/* Variables */
+:root {
+    --font-MontserratR: "MontserratR", "Arial", sans-serif;
+    --font-MontserratB: "MontserratB", "Arial", sans-serif;
+    --font-KaushanScriptR: "KaushanScriptR", "Arial", sans-serif;
+    --font-RobotoR: "RobotoR", "Arial", sans-serif;
+    --font-RobotoLI: "RobotoLI", "Arial", sans-serif;
+
+    --font-color-white: #ffffff;
+    --font-color-yellow: #fce38a;
+    --font-color-dark-grey: #333333;
+    --font-color-grey: #999999;
+    --font-color-peach: #f48989;
+
+    --bg-color-white: #ffffff;
+    --bg-color-yellow: #fce38a;
+    --bg-color-peach: #f48989;
+    --bg-color-light-teal: #95e1d3;
+}
